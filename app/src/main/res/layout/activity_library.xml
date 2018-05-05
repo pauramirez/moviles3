@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:visibility="visible">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logout"
+                android:text="Log Out"
+                android:layout_weight="0"
+                android:onClick="logOutUser"/>
+
+            <ImageButton
+                android:id="@+id/maps"
+                android:layout_width="59dp"
+                android:layout_height="53dp"
+                android:layout_weight="50"
+                android:gravity="start"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_map_white_24dp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Take Picture"
+            android:onClick="openMaps"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="75dp" />
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="264dp"
+            android:layout_height="182dp"
+            android:layout_centerInParent="true"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

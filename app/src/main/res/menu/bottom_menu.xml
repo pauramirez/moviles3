@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_restaurant"
+        android:enabled="true"
+        android:title="Restaurants"
+        android:icon="@drawable/ic_restaurant_black_24dp"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/action_theaters"
+        android:enabled="true"
+        android:title="Theaters"
+        android:icon="@drawable/ic_theaters_black_24dp"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>
